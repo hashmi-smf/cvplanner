@@ -12,10 +12,12 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.create(event_params)
+    @event.update_attribute(:sitename, Site.find(params[:sitename][:site_id].to_i).name)
   end
 
   def update
     @event.update_attributes(event_params)
+    @event.update_attribute(:sitename, Site.find(params[:sitename][:site_id].to_i).name)
   end
 
   def destroy 

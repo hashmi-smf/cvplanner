@@ -15,4 +15,13 @@
     .col-md-3#create-event
       = link_to destroy_user_session_path, remote: false do
         %button.btn.btn-danger
-          Signout    
+          Signout
+  - else
+    .col-md-3#create-event
+      = link_to new_event_path, remote: true do
+        %button.btn.btn-default
+          Create Event
+    .col-md-3#create-event
+      = link_to destroy_user_session_path, remote: false do
+        %button.btn.btn-danger
+          Signout
