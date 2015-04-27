@@ -1,0 +1,8 @@
+.container{:style => "color:black;"}
+  .row
+    = simple_form_for @site, remote: false do |f|
+      = f.input :name
+      = f.button :submit, 'add site'
+	
+
+	

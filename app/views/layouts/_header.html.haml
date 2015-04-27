@@ -1,0 +1,18 @@
+.container
+  .col-md-3
+    = link_to root_path do
+      = image_tag("cosmicvent.png",:alt=>'cosmicvent',:title=>'cosmicventplanner',:class=>'navbar-brand', :style=> 'padding:0px;')
+  - if user_signed_in? && current_user.role == "admin"
+    .col-md-3#create-event
+      = link_to new_event_path, remote: true do
+        %button.btn.btn-default
+          Create Event
+    .col-md-3#create-event
+      = link_to sites_path, remote: false do
+        %button.btn.btn-primary
+          Add Site
+
+    .col-md-3#create-event
+      = link_to destroy_user_session_path, remote: false do
+        %button.btn.btn-danger
+          Signout    
