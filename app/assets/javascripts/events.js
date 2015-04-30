@@ -5,7 +5,7 @@ function resize(event, dayDelta, minuteDelta){
     url: event.update,
     contentType: 'application/json',
     data: JSON.stringify({
-      event: { id: event.id, finish: event.end, sitename: event.sitename },
+      event: { id: event.id, finish: event.end },
       _method:'put'
     })
   });
@@ -18,7 +18,7 @@ function drop(event, dayDelta, minuteDelta){
     url: event.update,
     contentType: 'application/json',
     data: JSON.stringify({
-      event: { id: event.id, start: event.start, finish: event.end, sitename: event.sitename },
+      event: { id: event.id, start: event.start, finish: event.end},
       _method:'put'
     })
   });

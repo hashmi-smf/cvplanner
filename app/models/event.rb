@@ -1,6 +1,6 @@
 class Event < ActiveRecord::Base
   belongs_to :user
-  has_many :sites
+  belongs_to :site
   validate :finish_cannot_be_earlier_than_start
   
   validates :name,        presence: true, length: { in: 2..100 }

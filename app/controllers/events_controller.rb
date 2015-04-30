@@ -12,12 +12,10 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.create(event_params)
-    @event.update_attribute(:sitename, Site.find(params[:sitename][:site_id].to_i).name)
   end
 
   def update
     @event.update_attributes(event_params)
-    @event.update_attribute(:sitename, Site.find(params[:sitename][:site_id].to_i).name)
   end
 
   def destroy 
@@ -32,6 +30,6 @@ class EventsController < ApplicationController
 
     def event_params
       params.require(:event).permit(:name, :description, :start, :finish,
-        :phone, :budget, :status,:all_day, :sitename)
+        :phone, :budget, :status,:all_day, :site_id, :user_id)
     end
 end
