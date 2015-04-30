@@ -3,15 +3,18 @@ class EventsController < ApplicationController
   respond_to :html, :js, :json
 
   def index
-    @events = Event.all
+    @allevents = Event.all
+    @events = current_user.events
   end
 
   def new
-    @event = Event.new
+    @event = current_user.events.new
   end
 
   def create
-    @event = Event.create(event_params)
+    @event = current_user.events.new(event_params)
+    @event.save
+    @event.update_attribute(:user_id, current_user.id)
   end
 
   def update

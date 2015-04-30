@@ -10,7 +10,8 @@ node(:start)    { |event| event.start.to_s(:rfc822)  }
 node(:end)      { |event| event.finish.to_s(:rfc822) }
 node(:url)      { |event| edit_event_url(event)      }
 node(:allDay)   { |event| event.all_day              }
-node(:user_id)  { |event| event.user_id              }
+node(:user_id)   { |event| event.user_id              }
+
 
 node(:color) do |event|
   event.start - 3.days < Time.now ? '#920202' : '#00AEEF'

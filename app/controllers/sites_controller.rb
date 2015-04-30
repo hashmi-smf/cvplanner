@@ -20,6 +20,7 @@ class SitesController < ApplicationController
         redirect_to sites_path, notice: "Site deleted successfully"
 	end
 
+
 	private
 
 	def site_params
