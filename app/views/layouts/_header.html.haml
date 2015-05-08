@@ -15,7 +15,7 @@
       = link_to destroy_user_session_path, remote: false do
         %button.btn.btn-danger
           Signout
-  - else
+  - elsif user_signed_in?
     .col-md-3#create-event
       = link_to new_event_path, remote: true do
         %button.btn.btn-default

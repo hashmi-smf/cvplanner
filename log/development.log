@@ -32187,3 +32187,1314 @@ Processing by EventsController#index as JSON
   [1m[36mEvent Load (0.8ms)[0m  [1mSELECT "events".* FROM "events"  WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
   Rendered events/index.json.rabl (56.8ms)
 Completed 200 OK in 146ms (Views: 93.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 11:35:27 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (70.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (85.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (32.4ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mSite Load (33.4ms)[0m  SELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (1484.4ms)
+  Rendered layouts/_header.html.haml (49.8ms)
+  Rendered layouts/_messages.html.haml (16.6ms)
+Completed 200 OK in 13728ms (Views: 12256.5ms | ActiveRecord: 268.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 11:35:42 +0530
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (2.0ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mSite Load (3.2ms)[0m  [1mSELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (60.5ms)
+  Rendered layouts/_header.html.haml (7.6ms)
+  Rendered layouts/_messages.html.haml (0.9ms)
+Completed 200 OK in 4001ms (Views: 3966.3ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-04 11:35:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:55 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:55 +0530
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:56 +0530
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:56 +0530
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:56 +0530
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:57 +0530
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:57 +0530
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:58 +0530
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:58 +0530
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:58 +0530
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:59 +0530
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:59 +0530
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:59 +0530
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:59 +0530
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2015-05-04 11:35:59 +0530
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:00 +0530
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:00 +0530
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:00 +0530
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:00 +0530
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:00 +0530
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:00 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:01 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:01 +0530
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:01 +0530
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:01 +0530
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:01 +0530
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:01 +0530
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:01 +0530
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:01 +0530
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:02 +0530
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:02 +0530
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:02 +0530
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:02 +0530
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:02 +0530
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:02 +0530
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:03 +0530
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:03 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:03 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:03 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:03 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:04 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:05 +0530
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:05 +0530
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:05 +0530
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:05 +0530
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-04 11:36:05 +0530
+
+
+Started GET "/assets/cosmicvent.png" for 127.0.0.1 at 2015-05-04 11:36:06 +0530
+
+
+Started GET "/events?start=2015-04-26&end=2015-06-07&_=1430719557704" for 127.0.0.1 at 2015-05-04 11:36:08 +0530
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2015-04-26", "end"=>"2015-06-07", "_"=>"1430719557704"}
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (2.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.rabl (89.6ms)
+Completed 200 OK in 251ms (Views: 165.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/events/4/edit" for 127.0.0.1 at 2015-05-04 11:40:21 +0530
+Processing by EventsController#edit as JS
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (6.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (10.8ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mSite Load (4.2ms)[0m  SELECT "sites".* FROM "sites"   ORDER BY "sites"."name" ASC
+  Rendered events/_form.html.haml (1565.0ms)
+  Rendered events/_modal.html.haml (3290.7ms)
+  Rendered events/edit.js.haml (3354.8ms)
+Completed 200 OK in 3490ms (Views: 3393.3ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.1.0" for 127.0.0.1 at 2015-05-04 11:40:26 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 12:28:38 +0530
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (217.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (16.4ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mSite Load (6.7ms)[0m  [1mSELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (53.7ms)
+  Rendered layouts/_header.html.haml (12.8ms)
+  Rendered layouts/_messages.html.haml (0.7ms)
+Completed 200 OK in 4104ms (Views: 3813.0ms | ActiveRecord: 240.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-05-04 12:28:43 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (13.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 41ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 12:28:44 +0530
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (1.9ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mSite Load (1.8ms)[0m  [1mSELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (46.2ms)
+  Rendered layouts/_header.html.haml (7.2ms)
+  Rendered layouts/_messages.html.haml (1.8ms)
+Completed 200 OK in 3211ms (Views: 3179.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-04 12:28:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:49 +0530
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:49 +0530
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:49 +0530
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:49 +0530
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:51 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:52 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-04 12:28:53 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 13:11:15 +0530
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+:
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /home/sayyad/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/sayyad/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.9) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.9) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.9) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sayyad/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/sayyad/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/sayyad/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/7ebad1b65ab73929/variables" for 127.0.0.1 at 2015-05-04 13:11:16 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 13:12:17 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (14.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (48.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (33.8ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mSite Load (30.5ms)[0m  SELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (1061.2ms)
+  Rendered layouts/_header.html.haml (69.8ms)
+  Rendered layouts/_messages.html.haml (13.7ms)
+Completed 200 OK in 9808ms (Views: 8920.3ms | ActiveRecord: 187.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-04 13:12:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:34 +0530
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:34 +0530
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:34 +0530
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:34 +0530
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:34 +0530
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:35 +0530
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:35 +0530
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:35 +0530
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:35 +0530
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:35 +0530
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:36 +0530
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:36 +0530
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:36 +0530
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:36 +0530
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:36 +0530
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:36 +0530
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:37 +0530
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:37 +0530
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:37 +0530
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:37 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:37 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:37 +0530
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:37 +0530
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:37 +0530
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:38 +0530
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:38 +0530
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:38 +0530
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:38 +0530
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:38 +0530
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:38 +0530
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:38 +0530
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:38 +0530
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:39 +0530
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:39 +0530
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:39 +0530
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:39 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:39 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:39 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:40 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:41 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:41 +0530
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:41 +0530
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:41 +0530
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:41 +0530
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:41 +0530
+
+
+Started GET "/assets/cosmicvent.png" for 127.0.0.1 at 2015-05-04 13:12:42 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 13:12:50 +0530
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (9.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (2.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mSite Load (1.4ms)[0m  [1mSELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (96.8ms)
+  Rendered layouts/_header.html.haml (7.8ms)
+  Rendered layouts/_messages.html.haml (1.0ms)
+Completed 200 OK in 4491ms (Views: 4428.8ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:56 +0530
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:57 +0530
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:58 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:59 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:59 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:59 +0530
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-04 13:12:59 +0530
+
+
+Started GET "/assets/cosmicvent.png" for 127.0.0.1 at 2015-05-04 13:12:59 +0530
+
+
+Started GET "/events?start=2015-04-26&end=2015-06-07&_=1430725377705" for 127.0.0.1 at 2015-05-04 13:13:02 +0530
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2015-04-26", "end"=>"2015-06-07", "_"=>"1430725377705"}
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (1.7ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.rabl (123.2ms)
+Completed 200 OK in 279ms (Views: 207.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2015-05-04 13:13:41 +0530
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (11.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (15.8ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mSite Load (6.2ms)[0m  SELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (144.8ms)
+  Rendered layouts/_header.html.haml (52.7ms)
+  Rendered layouts/_messages.html.haml (32.9ms)
+Completed 200 OK in 3404ms (Views: 3321.4ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/events?start=2015-04-26&end=2015-06-07&_=1430725377706" for 127.0.0.1 at 2015-05-04 13:13:46 +0530
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2015-04-26", "end"=>"2015-06-07", "_"=>"1430725377706"}
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (22.4ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.rabl (95.5ms)
+Completed 200 OK in 267ms (Views: 153.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-08 12:41:43 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 82ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-05-08 12:41:43 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (388.2ms)
+  Rendered layouts/_header.html.haml (12.1ms)
+  Rendered layouts/_messages.html.haml (4.8ms)
+Completed 200 OK in 3712ms (Views: 3582.3ms | ActiveRecord: 48.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-08 12:41:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:48 +0530
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:48 +0530
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:48 +0530
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:49 +0530
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:50 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+
+
+Started GET "/assets/cosmicvent.png" for 127.0.0.1 at 2015-05-08 12:41:51 +0530
+  [1m[36mUser Load (14.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-05-08 12:42:46 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ucVAsb0NIlhz9pZYTVsspDbo0N/QYuw11lxdoqlQvio=", "user"=>{"email"=>"hashmi@cosmicvent.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (38.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'hashmi@cosmicvent.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 1  [["current_sign_in_at", "2015-05-08 07:12:46.358969"], ["last_sign_in_at", "2015-04-30 11:25:46.504809"], ["sign_in_count", 7], ["updated_at", "2015-05-08 07:12:46.367590"]]
+  [1m[36m (17.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 375ms (ActiveRecord: 67.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-08 12:42:46 +0530
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (10.7ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mSite Load (28.9ms)[0m  SELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (212.6ms)
+  Rendered layouts/_header.html.haml (13.9ms)
+  Rendered layouts/_messages.html.haml (0.5ms)
+Completed 200 OK in 1347ms (Views: 1242.0ms | ActiveRecord: 48.4ms)
+
+
+Started GET "/events?start=2015-04-26&end=2015-06-07&_=1431069168216" for 127.0.0.1 at 2015-05-08 12:42:48 +0530
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2015-04-26", "end"=>"2015-06-07", "_"=>"1431069168216"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (3.4ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.rabl (23.3ms)
+Completed 200 OK in 71ms (Views: 53.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/sites" for 127.0.0.1 at 2015-05-08 12:43:11 +0530
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSite Load (0.6ms)[0m  SELECT "sites".* FROM "sites"
+  Rendered sites/index.html.haml within layouts/application (29.3ms)
+  Rendered layouts/_header.html.haml (11.1ms)
+  Rendered layouts/_messages.html.haml (4.0ms)
+Completed 200 OK in 1049ms (Views: 1038.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-05-08 12:43:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-08 12:43:17 +0530
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.7ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mSite Load (0.5ms)[0m  [1mSELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (28.4ms)
+  Rendered layouts/_header.html.haml (2.5ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 1087ms (Views: 1074.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/events?start=2015-04-26&end=2015-06-07&_=1431069168217" for 127.0.0.1 at 2015-05-08 12:43:18 +0530
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2015-04-26", "end"=>"2015-06-07", "_"=>"1431069168217"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (0.9ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.rabl (17.7ms)
+Completed 200 OK in 48ms (Views: 38.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2015-05-08 12:43:20 +0530
+Processing by EventsController#new as JS
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSite Load (1.1ms)[0m  [1mSELECT "sites".* FROM "sites"   ORDER BY "sites"."name" ASC[0m
+  Rendered events/_form.html.haml (402.6ms)
+  Rendered events/_modal.html.haml (1175.3ms)
+  Rendered events/new.js.haml (1193.3ms)
+Completed 200 OK in 1270ms (Views: 1224.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.1.0" for 127.0.0.1 at 2015-05-08 12:43:21 +0530
+
+
+Started POST "/events" for 127.0.0.1 at 2015-05-08 12:44:21 +0530
+Processing by EventsController#create as JS
+  Parameters: {"utf8"=>"✓", "event"=>{"name"=>"hussain", "phone"=>"9845671230", "budget"=>"6Lakhs", "start"=>"May 8 2015 12:43 PM", "description"=>"he needs a villa at gachibowli", "finish"=>"May 14 2015 12:43 PM", "status"=>"urgent", "site_id"=>"9", "all_day"=>"0"}, "commit"=>"Submit"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (36.0ms)[0m  INSERT INTO "events" ("budget", "created_at", "description", "finish", "name", "phone", "site_id", "start", "status", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["budget", "6Lakhs"], ["created_at", "2015-05-08 07:14:21.783642"], ["description", "he needs a villa at gachibowli"], ["finish", "2015-05-14 12:43:00.000000"], ["name", "hussain"], ["phone", "9845671230"], ["site_id", 9], ["start", "2015-05-08 12:43:00.000000"], ["status", "urgent"], ["updated_at", "2015-05-08 07:14:21.783642"], ["user_id", 1]]
+  [1m[36m (21.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  Rendered events/_save.js.haml (3.9ms)
+  Rendered events/create.js.haml (22.1ms)
+Completed 200 OK in 155ms (Views: 43.1ms | ActiveRecord: 59.9ms)
+
+
+Started GET "/events?start=2015-04-26&end=2015-06-07&_=1431069168218" for 127.0.0.1 at 2015-05-08 12:44:21 +0530
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2015-04-26", "end"=>"2015-06-07", "_"=>"1431069168218"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (1.7ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.rabl (25.5ms)
+Completed 200 OK in 60ms (Views: 48.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/sites" for 127.0.0.1 at 2015-05-08 12:44:25 +0530
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSite Load (0.7ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
+  Rendered sites/index.html.haml within layouts/application (29.7ms)
+  Rendered layouts/_header.html.haml (2.7ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 1106ms (Views: 1094.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/sites" for 127.0.0.1 at 2015-05-08 12:44:32 +0530
+Processing by SitesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MWNxt++js0ijQ/Wlx3nYkFZuhjuy3QLnGb/S0XSBhSs=", "site"=>{"name"=>"gachibowli"}, "commit"=>"add site"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (41.9ms)[0m  INSERT INTO "sites" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-05-08 07:14:32.985668"], ["name", "gachibowli"], ["updated_at", "2015-05-08 07:14:32.985668"]]
+  [1m[36m (19.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/sites
+Completed 302 Found in 109ms (ActiveRecord: 64.1ms)
+
+
+Started GET "/sites" for 127.0.0.1 at 2015-05-08 12:44:33 +0530
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSite Load (0.8ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
+  Rendered sites/index.html.haml within layouts/application (38.1ms)
+  Rendered layouts/_header.html.haml (2.9ms)
+  Rendered layouts/_messages.html.haml (0.6ms)
+Completed 200 OK in 1130ms (Views: 1120.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-08 12:44:39 +0530
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (0.8ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mSite Load (0.6ms)[0m  SELECT  "sites".* FROM "sites"  WHERE "sites"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered events/index.html.haml within layouts/application (17.3ms)
+  Rendered layouts/_header.html.haml (2.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 1086ms (Views: 1069.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/events?start=2015-04-26&end=2015-06-07&_=1431069274543" for 127.0.0.1 at 2015-05-08 12:44:40 +0530
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2015-04-26", "end"=>"2015-06-07", "_"=>"1431069274543"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (1.4ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.rabl (19.5ms)
+Completed 200 OK in 51ms (Views: 32.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-05-08 12:49:36 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 42ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-08 12:49:36 +0530
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-05-08 12:49:37 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (46.2ms)
+  Rendered layouts/_header.html.haml (2.1ms)
+  Rendered layouts/_messages.html.haml (0.8ms)
+Completed 200 OK in 1077ms (Views: 1071.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-05-08 12:49:50 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bp47j/32YLDrRnSHllSZi5bjFpIfNNZj4xY8f2GSMas=", "user"=>{"email"=>"amair@cosmicvent.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (80.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'amair@cosmicvent.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = 2  [["current_sign_in_at", "2015-05-08 07:19:50.365439"], ["sign_in_count", 2], ["updated_at", "2015-05-08 07:19:50.373500"]]
+  [1m[36m (16.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 236ms (ActiveRecord: 99.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-08 12:49:50 +0530
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered events/index.html.haml within layouts/application (2.9ms)
+  Rendered layouts/_header.html.haml (2.6ms)
+  Rendered layouts/_messages.html.haml (0.8ms)
+Completed 200 OK in 1012ms (Views: 1004.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events?start=2015-04-26&end=2015-06-07&_=1431069591915" for 127.0.0.1 at 2015-05-08 12:49:52 +0530
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2015-04-26", "end"=>"2015-06-07", "_"=>"1431069591915"}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (9.7ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.rabl (28.1ms)
+Completed 200 OK in 69ms (Views: 43.8ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/events/6/edit" for 127.0.0.1 at 2015-05-08 12:50:05 +0530
+Processing by EventsController#edit as JS
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEvent Load (0.5ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mSite Load (1.9ms)[0m  [1mSELECT "sites".* FROM "sites"   ORDER BY "sites"."name" ASC[0m
+  Rendered events/_form.html.haml (79.9ms)
+  Rendered events/_modal.html.haml (94.9ms)
+  Rendered events/edit.js.haml (119.1ms)
+Completed 200 OK in 151ms (Views: 132.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2015-05-08 12:50:27 +0530
+Processing by EventsController#new as JS
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSite Load (0.8ms)[0m  [1mSELECT "sites".* FROM "sites"   ORDER BY "sites"."name" ASC[0m
+  Rendered events/_form.html.haml (75.8ms)
+  Rendered events/_modal.html.haml (86.4ms)
+  Rendered events/new.js.haml (95.9ms)
+Completed 200 OK in 134ms (Views: 122.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/events/6/edit" for 127.0.0.1 at 2015-05-08 12:50:38 +0530
+Processing by EventsController#edit as JS
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mSite Load (0.9ms)[0m  SELECT "sites".* FROM "sites"   ORDER BY "sites"."name" ASC
+  Rendered events/_form.html.haml (79.5ms)
+  Rendered events/_modal.html.haml (92.7ms)
+  Rendered events/edit.js.haml (102.1ms)
+Completed 200 OK in 128ms (Views: 112.5ms | ActiveRecord: 2.1ms)

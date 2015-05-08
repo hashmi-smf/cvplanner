@@ -1,0 +1,1 @@
+[{"name":"process_action.action_controller","payload":{"controller":"EventsController","action":"index","params":{"controller":"events","action":"index"},"format":"html","method":"GET","path":"/"},"time":"2015-05-08T12:49:37.002+05:30","transaction_id":"1127ed8aef7e5926ab0b","end":"2015-05-08T12:49:37.004+05:30","children":[],"duration":2.092426}]
